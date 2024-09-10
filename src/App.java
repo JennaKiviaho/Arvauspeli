@@ -25,13 +25,13 @@ public class App {
             System.out.println("Väärin. Arvaa uudelleen. Tai kirjoita loppu päättääksesi pelin.");
             arvaus++;
         }
-        if (nimi.equalsIgnoreCase("loppu"))
+        if (nimi.equalsIgnoreCase("loppu")) // Kirjoita loppu, peli päättyy
         {
             arvaus--;
             break;
         }
         } while (!nimi.equals("Jenna"));
 
-        System.out.println("Arvasit " + arvaus + " kertaa.");
+        System.out.println("Arvasit " + arvaus + " kertaa."); // Kerro käyttäjälle, kuinka monta kertaa arvasi.
     }
 }
