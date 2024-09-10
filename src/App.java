@@ -8,8 +8,11 @@ public class App {
         String nimi = "Jenna"; // Oikea vastaus on Jenna
 
         System.out.println("Arvaa nimeni.");
-        nimi = input.nextLine();
         
+
+        do
+        {
+        nimi = input.next();
         if (nimi.equals("Jenna"))
         {
             System.out.println("Oikein! Onneksi olkoon!");
@@ -18,5 +21,6 @@ public class App {
         {
             System.out.println("Väärin. Arvaa uudelleen.");
         }
+    } while (!nimi.equals("Jenna"));
     }
 }
