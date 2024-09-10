@@ -10,5 +10,13 @@ public class App {
         System.out.println("Arvaa nimeni.");
         nimi = input.nextLine();
         
+        if (nimi.equals("Jenna"))
+        {
+            System.out.println("Oikein! Onneksi olkoon!");
+        }
+        else
+        {
+            System.out.println("Väärin. Arvaa uudelleen.");
+        }
     }
 }
